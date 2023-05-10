@@ -49,7 +49,7 @@ public class Main {
     public static void main(String[] args) {
        
         //değişkenleri tanımladık
-        int matematik, fizik, kimya, turkce, tarih, muzik;
+        int mat, fizik, kimya, turkce, tarih, muzik;
 
         //scanner  tanımladık
         Scanner inp = new Scanner(System.in);
