@@ -9,13 +9,11 @@ public class main {
 	   int years = scanner.nextInt();
 	   
  
-	   if(years % 4 == 0 ||  years % 400 == 0) {
+	   if(years % 4 == 0 || (years % 100 == 0 && years % 400 == 0)) {
 		   System.out.println(years + " bir artık yıldır");
 		   
 	   }else {
 		   System.out.println(years + " bir artık yıl değildir");
 	   }
-	   
-	   
    }
 }
