@@ -1,25 +1,33 @@
-/* Java ile klavyeden girilen N tane sayma sayısından en büyük ve en küçük sayıları bulan ve bu sayıları ekrana yazan programı yazın.
- */
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n, sayi, enBuyuk, enKucuk;
         
-        //set variable 
-         int numCount;
-
-        //set scanner 
-        Scanner inp = new Scanner(System.in);
-
-        System.out.print("Kaç Sayı Gireceksiniz: ");
-	    numCount = scanner.nextInt();
-
-        for (int i = 1; i <= numCount; i++) {
-                System.out.print(i+". Sayıyı Giriniz ");
-                int i = scanner.nextInt();
-
+        System.out.print("Kaç tane sayı gireceksiniz: ");
+        n = input.nextInt();
+        
+        System.out.print("1. Sayıyı giriniz: ");
+        sayi = input.nextInt();
+        enBuyuk = sayi;
+        enKucuk = sayi;
+        
+        for(int i=2; i<=n; i++) {
+            System.out.print(i + ". Sayıyı giriniz: ");
+            sayi = input.nextInt();
+            
+            if(sayi > enBuyuk) {
+                enBuyuk = sayi;
+            }
+            
+            if(sayi < enKucuk) {
+                enKucuk = sayi;
+            }
         }
-
+        
+        System.out.println("En büyük sayı: " + enBuyuk);
+        System.out.println("En küçük sayı: " + enK
     }
 }
 
