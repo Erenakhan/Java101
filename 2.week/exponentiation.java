@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
 
-    static void power(){
+    static void exponentiation(){
         Scanner input = new Scanner(System.in);
         System.out.print("Taban Değerini Giriniz :");
         int taban = input.nextInt();
